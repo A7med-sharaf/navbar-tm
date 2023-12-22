@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="icon/portfolio-suitcase_icon-icons.com_52927.ico">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<style>
+    .banner-image{
+        background-image: url('image/pexels-pok-rie-697313.jpg');
+        background-size: cover;
+    }
+</style>
+<body>
+    <nav  class="navbar navbar-expand-lg navbar-dark  p-md-3 fixed-top" id="text">
+        <div class="container">
+        <a href="#" class="navbar-brand disply-3 fw-bold w-5"> O<span class="theme-text">ption</span> </a>
+            <button class="navbar-toggler" data-bs-target="#cnav" data-bs-toggle="collapse"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-lable="Toggle Navbar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse" id="cnav">
+            <ul class="navbar-nav ms-auto text-center">
+             <li class="navbar-item"><a href="" class="nav-link"> Home</a></li>
+             <li class="navbar-item"><a href="#text-1" class="nav-link"> Services</a></li>
+             <li class="navbar-item"><a href="#text-2" class="nav-link"> Tools</a></li>
+             <li class="navbar-item"><a href="#text-3" class="nav-link"> About Us</a></li>
+            </div>
+                
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+            <h1 class="text-white">Web Zone </h1>
+        </div>
+    </div>
+
+    <div class="container my-5 d-grid gap-5">
+
+        <div class="p-5 border" id="text-1">
+            <p>lorem ipsum dolor amel , consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="p-5 border" id="text-2">
+            <p>lorem ipsum dolor amel , consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="p-5 border" id="text-3">
+            <p>lorem ipsum dolor amel , consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        var nav= document.querySelector('nav');
+        window.addEventListener('scroll', function () {
+
+            if(window.pageYOffset > 100){
+                nav.classList.add('bg-dark','shadow');
+
+            }
+            else{
+
+                nav.classList.remove('bg-dark','shadow');
+            }
+        });
+    
+    </script>
+</body>
+</html>
